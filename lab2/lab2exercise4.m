@@ -1,0 +1,13 @@
+clc;
+clear all;
+close all;
+gap = 0.01;
+t = -3:gap:3;
+z = double(abs(t)<1);
+y = conv(z,z)*gap;
+subplot(3,1,1);
+plot(t, z);
+subplot(3,1,2);
+plot(t,z);
+subplot(3,1,3);
+plot(t, y(301:901), '-r');

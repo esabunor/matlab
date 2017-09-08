@@ -1,0 +1,8 @@
+clc;
+clear all;
+close all;
+gap = 0.01;
+t = -3:gap:3;
+z = double(abs(t)<1);
+y = conv(z,z);
+plot(t, y, '-r');

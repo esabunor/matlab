@@ -1,0 +1,16 @@
+clc;
+clear all;
+close all;
+t = -1:0.001:1;
+e = 0.1;
+x=exp(-t.^2/(2*e^2))*sqrt(1/(2*pi*e^2));
+plot(t,x,'linewidth', 2);
+hold on;
+e1 = 1;
+x1=exp(-t.^2/(2*e1^2))*sqrt(1/(2*pi*e1^2));
+plot(t,x1,'linewidth', 2);
+hold on;
+e2 = 10;
+x2=exp(-t.^2/(2*e2^2))*sqrt(1/(2*pi*e2^2));
+plot(t,x2,'linewidth', 2);
+grid on;
